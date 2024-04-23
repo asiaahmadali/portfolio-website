@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+     />
+       <!-- animation  -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">Portfolio</h1>
+                <ul id="menu-list">
+                   <li><a href="#header">Home</a></li>
+                   <li><a href="#about">About</a></li>
+                   <li><a href="#services">Services</a></li>
+                   <li><a href="#projects">Projects</a></li>
+                   <li><a href="#contact">Contact</a></li>
+                   <i class="fas fa-close close-icon" onclick="closeMenu()"></i>
+                </ul>
+
+                <i class="fas fa-bars open-icon" onclick="openMenu()"></i>
+                
+            </nav>
+
+            <div  class="header-text">
+                <p data-aos="fade-up">Front-End Developer</p>
+                <h1 data-aos="fade-left">Hi, I am <span>Asia Ahmad</span> <br>Ali From Pakistan</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--    About section -->
+
+    <div id="about" >
+        <div class="container">
+            <div class="about-row" data-aos="fade-up">
+                <div class="about-column-1">
+                    <!-- <img src="./personal-portfolio-img/images/user.png" alt="an image"> -->
+                    <img src="./personal-portfolio-img/images/personal-pic.jpg" alt="">
+                </div>
+                <div class="about-column-2">
+                    <h1 class="about-heading-title">About Me</h1>
+                    <p>As a dedicated front-end developer, I am fueled by a passion for crafting captivating
+                         user experiences and bringing designs to life through code. With a keen eye for 
+                         design and a mastery of HTML, CSS, and JavaScript, I specialize in building 
+                         elegant and intuitive interfaces that captivate and delight users. My journey in this 
+                         field has been marked by a commitment to staying abreast of emerging technologies and 
+                         design trends.
+                    </p>
+
+                    <div class="about-titles">
+                        <div class="about-links active" onclick="openlink('skills')">Skills</div>
+                        <div class="about-links" onclick="openlink('experience')">Experience</div>
+                        <div class="about-links" onclick="openlink('education')">Education</div>
+                    </div>
+
+                    <!-- skills content -->
+                    <div class="about-links-content active-about-link" id="skills">
+                        <ul>
+                            <li><span>HTML / CSS  </span><br> Designing web interfaces</li>
+                            <li><span>Javascript</span><br> Interactive User Applications </li>
+                            <li><span>React js </span><br> Single Page Applications</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience content -->
+                    <div class="about-links-content " id="experience">
+                        <ul>
+                            <li><span>Coding competitions</span><br> Patcipated in CodeBees at University</li>
+                            <li><span>Front-End Developer</span><br> Developed Quiz app, Weather app ,news app</li>
+                            <li><span>React js Developer</span><br> Sigle pages applications</li>
+                        </ul>
+                    </div>
+
+                    <!--   Education content -->
+                    <div class="about-links-content" id="education">
+                        <ul>
+                            <li><span>Bachelor In Information Technology</span><br> University of the Punjab</li>
+                            <li><span>Intermediate</span><br> City Science College</li>
+                            <li><span>Matric </span><br>Govt high school</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services section -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="services-heading">My Services</h1>
+            <div class="services-list">
+                <div class="serv" data-aos="zoom-in-up">
+                    <i class="fas fa-code"></i>
+                    <h2>Web design</h2>
+                    <p>From wireframes to pixel-perfect prototypes, my approach to web design blends creativity 
+                        with technical expertise to deliver intuitive, responsive, and visually striking digital solutions.
+                    </p>
+                    <a href="#">Exploring more</a>
+                </div>
+
+                <div class="serv" data-aos="zoom-in-up">
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Web developmet</h2>
+                    <p>Specializing in web development, I engineer robust, scalable solutions that empower businesses to 
+                        thrive in the digital landscape, from dynamic e-commerce platforms to interactive web applications."
+                    </p>
+                    <a href="#">Exploring more</a>
+                </div>
+
+                <div class="serv" data-aos="zoom-in-up">
+                    <i class="fab fa-app-store"></i>
+                    <h2>Javascript development</h2>
+                    <p>As a seasoned JavaScript developer, I specialize in crafting dynamic, interactive web experiences that push
+                         the boundaries of what's possible on the web, leveraging the full power of this versatile language.
+                    </p>
+                    <a href="#">Exploring more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio section -->
+
+    <div id="projects">
+        <div class="container">
+        <h1 class="projects-heading">My projects</h1>
+        <div class="projects-list">
+
+            <div class="project" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+
+                <!-- <img src="./personal-portfolio-img/images/work-1.png" alt="work image"> -->
+                <img src="./personal-portfolio-img/images/Quiz.PNG" alt="">
+                <div class="layer">
+                    <h3>My Quiz app</h3>
+                    <p>My Quiz App with beautiful layout and amazing design using html,css and javascript!</p>
+                    <a href="https://asiaahmadali.github.io/Quiz-App/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+
+            <div class="project" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+
+                <!-- <img src="./personal-portfolio-img/images/work-2.png" alt="work image"> -->
+                <img src="./personal-portfolio-img/images/E.PNG" alt="">
+                <div class="layer">
+                    <h3>An Ecommerce Website</h3>
+                    <p>An Ecommerce Website having different categories,login page and profucts section!</p>
+                    <a href="https://asiaahmadali.github.io/Ecommerce-Website/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+
+            <div class="project" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <img src="./personal-portfolio-img/images/weather2.PNG" alt="">
+                <div class="layer">
+                    <h3>weather</h3>
+                    <p>weather App using Api call and javascript with modern look and responsiveness!</p>
+                    <a href="https://asiaahmadali.github.io/Weather-App/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>  
+
+        </div>
+        
+              
+        <!-- button -->
+        <a  href="./projects/projects.html" class="btn">See All projects</a>
+
+        </div>
+
+    </div>
+
+    <!-- contact section -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="contact-row">
+                <div class="contact-left-column" data-aos="fade-down-left">
+                     <h1 class="contact-heading">Contact Me</h1>
+                     <p><i class="fas fa-paper-plane"></i>asiaahmadali17@gmail.com</p>
+                     <p> <i class="fas fa-phone-square-alt"></i>03245729914</p>
+                     <p><i class="fa-brands fa-github"></i> <a href="https://github.com/asiaahmadali" class="github-link">https://github.com/asiaahmadali</a></p>
+
+                     <div class="social-icons">
+                       <a href=""><i class="fa-brands fa-facebook"></i></a> 
+                       <a href=""><i class="fa-brands fa-instagram"></i></a> 
+                       <a href=""><i class="fa-brands fa-twitter"></i></a> 
+                       <a href=""><i class="fa-brands fa-linkedin"></i></a> 
+                     </div>
+
+                     <a href="./personal-portfolio-img/images/my-cv.pdf" download class="btn btn-sp">Download CV</a>
+                </div>
+
+                <div class="contact-right-column" data-aos="fade-down-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="email" placeholder="Enter Your Eamil" required>
+                        <textarea name="message"  rows="8" placeholder="Enter your message"></textarea>
+                        <button type="submit" class="btn btn-sp">Submit Form</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- copyright -->
+
+        <div class="copyright">
+            <p>copyright &copy; Asia. Made with <i class="fas fa-heart"></i> By Asia Ahmad Ali</p>
+        </div>
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzXSp99iObLkJxy5kqZVkejX9zRTrLWAPyF4a1VYZLd49rltGF1MWz6yuUQ-C2Q3bHTdg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg') ;
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML='Message send successfully' ;
+                setTimeout(() => {
+                    msg.innerHTML='';
+                }, 5000);
+                form.reset() ;
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+   <script src="./script.js"></script>
+         <!-- animation link -->
+         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+         <script>
+             AOS.init();
+         </script>
+</body>
+
+</html>
