@@ -18,6 +18,7 @@ body , html{
     height: 100vh;
 }
 
+
 .container{
     padding: 10px 10%;
 }
@@ -52,11 +53,21 @@ nav ul li a:hover{
 }
 
 /* header text */
+.main-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10%;
+}
+.header-pic{
+    width: 400px;
+    height: 400px;
+    border:1px solid black;
+    border-radius: 100%;
 
+}
 .header-text{
-    font-size: 28px;
-    margin-top: 15%;
-   margin-left: 20%;
+    font-size: 28px;  
 }
 
 .header-text h1{
@@ -213,6 +224,15 @@ nav ul li a:hover{
     transform: translateY(-10px);  
 }
 
+.explore-btn{
+    background-color: rgb(14, 13, 13);
+    color: white;
+    padding: 10px;
+}
+.project-img{
+    width: 200px;
+    height: 200p;
+}
 /* work section styling */
 
 #projects{
@@ -411,16 +431,27 @@ nav .open-icon , nav .close-icon{
 }
 /* Responsiveness in website */
 
-@media(max-width:600px)
+@media(max-width:650px)
 {
+    .main-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10%;
+    }
+    .header-pic{
+        width: 200px;
+        height: 200px;
+        border:1px solid black;
+        border-radius: 100%;
+    }
    
     .header-text{
-        font-size: 15px;
-        margin-top: 50%;
+        font-size: 20px;
     }
     
     .header-text h1{
-        font-size: 25px;
+        font-size: 20px;
     }
 
     nav .open-icon , nav .close-icon{
@@ -476,12 +507,16 @@ nav .open-icon , nav .close-icon{
 
 /* for mobile screen */
 
-@media(max-width:360px)
+@media(max-width:420px)
 {
     #header{
         width: 100%;
-        height: 60vh;
+        height: 30vh;
     }
+    .header-pic{
+        display: none;
+    }
+   
     .logo{
         font-size: 2rem;
     }
